@@ -1,0 +1,146 @@
+* {
+  font-family: arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(7, 7, 10);
+  width: 100%;
+}
+
+nav {
+  padding: 0px;
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: rgb(7, 7, 10);
+  box-sizing: border-box;
+  color: rgb(255, 153, 0);
+}
+
+nav > a {
+  text-align: center;
+  text-decoration: none;
+  color: orange;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  width: 80%;
+  height: 10px;
+  font-size: 8px;
+  border: 1px solid rgb(94, 61, 0);
+  font-weight: bold;
+}
+
+a:hover {
+  cursor: pointer;
+  color: black;
+  background-color: rgb(255, 166, 0);
+}
+
+#content {
+  box-sizing: border-box;
+  color: white;
+  background-color: rgb(7, 7, 10);
+}
+
+#content > section:nth-child(even) {
+  background-color: orange;
+  color: black;
+}
+
+#content > section {
+  padding: 0px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Optional: Align items vertically */
+}
+
+#fncf {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#feedbackArea {
+  height: 150px;
+  width: 100%;
+  resize: vertical;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+input {
+  width: 100%;
+}
+
+.feedbackLabel {
+  padding-top: 30px;
+}
+
+#intro-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+#intro-content {
+  width: 50%;
+  min-width: 400px;
+}
+
+#intro-content span.intro-heading {
+  font-size: 35px;
+}
+
+#intro-content span.intro-description {
+  font-size: 25px;
+  color: rgb(128, 128, 128);
+}
+
+#intro-content span.vision-heading {
+  font-size: 25px;
+  color: gray;
+}
+
+#resume-section,
+#proj-section,
+#game-section,
+#contact-section {
+  height: 100vh;
+}
+
+#contact-section {
+  display: flex;
+  justify-content: center;
+}
+
+#contact-content {
+  width: 30%;
+  min-width: 300px;
+}
+
+#contact-content span.feedback-heading,
+#contact-content span.contact-heading {
+  font-size: 35px;
+}
+
+.feedbackLabel {
+  color: gray;
+}
+
+#submitFeedbackButton {
+  background-color: black;
+  color: orange;
+  padding: 4px 10px;
+  border: 1px solid orange;
+}
+
+#contact-content span.contact-info {
+  font-size: 25px;
+}
